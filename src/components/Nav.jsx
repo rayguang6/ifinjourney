@@ -12,7 +12,7 @@ const Nav = () => {
 
 
   return (
-    <header className='padding-x py-8 z-10 w-full fixed shadow-green'>
+    <header className='padding-x py-8 w-full fixed shadow-green bg-white z-50'>
       <nav className='flex justify-between items-center max-container'>
         <Link to='/'>
           <img
