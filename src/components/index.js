@@ -5,7 +5,8 @@ import ProgressBar from "./ProgressBar";
 import Button from "./Button";
 import JobDetails from "./JobDetails";
 import JobSummary from "./JobSummary";
-
+import CommunityPost from './CommunityPost'
+import CommunityGroup from './CommunityGroup'
 
 
 export {
@@ -16,4 +17,8 @@ export {
     Button,
     JobSummary,
     JobDetails,
+    CommunityPost,
+    CommunityGroup,
+
+
 }
