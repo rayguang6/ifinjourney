@@ -1,9 +1,15 @@
-import Page1 from "./Page1";
-import Page2 from "./Page2";
-import Page3 from "./Page3";
+import Community from "./Community";
+import Company from "./Company";
+import Talent from "./Talent";
+import Learning from "./Learning";
+import Profile from "./Profile";
+import Dashboard from "./Dashboard";
 
 export {
-    Page1,
-    Page2,
-    Page3,
+    Community,
+    Company,
+    Talent,
+    Learning,
+    Profile,
+    Dashboard,
 }

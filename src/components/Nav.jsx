@@ -10,9 +10,9 @@ const Nav = () => {
   "font-montserrat leading-normal text-lg text-slate-gray font-bold text-primary" : // Active classes
   "font-montserrat leading-normal text-lg text-slate-gray"; // Default classes
 
-  
+
   return (
-    <header className='padding-x py-8 z-10 w-full fixed shadow-3xl shadow-green'>
+    <header className='padding-x py-8 z-10 w-full fixed shadow-green'>
       <nav className='flex justify-between items-center max-container'>
         <Link to='/'>
           <img
@@ -35,7 +35,11 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+        
+        <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24'>
           <Link to='/'><div className="bg-primary px-5 py-2 rounded-md text-white font-bold	">Login</div></Link>
+        </div>
+
         <div className='hidden max-lg:block'>
           <img src={hamburger} alt='hamburger icon' width={25} height={25} />
         </div>

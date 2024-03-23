@@ -1,9 +1,12 @@
 import { Nav } from "./components";
 import { Routes, Route } from 'react-router-dom'
 import {
-  Page1,
-  Page2,
-  Page3
+  Community,
+  Company,
+  Talent,
+  Learning,
+  Profile,
+  Dashboard,
 } from "./pages";
 
 const App = () => {
@@ -12,9 +15,12 @@ const App = () => {
       <Nav />
       <main className="container pt-32 px-16 max-container">
         <Routes>
-          <Route path="/page1" element={<Page1 />} />
-          <Route path="/page2" element={<Page2 />} />
-          <Route path="/page3" element={<Page3 />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/company" element={<Company />} />
+          <Route path="/talent" element={<Talent />} />
+          <Route path="/learning" element={<Learning />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </main>
     </>
