@@ -232,7 +232,6 @@ export const jobs = [
 
 // Community
 // Sample data for posts
-// Sample data for posts
 export const posts = [
     {
       id: 1,
@@ -357,10 +356,44 @@ export const posts = [
 ]
 
 // Sample data for groups
-  export const groups = [
-    { id: 1, name: "Islamic Finance 101", description: "Discuss and learn about the basics of Islamic finance." },
-    { id: 2, name: "Sharia-Compliant Investments", description: "Explore investment opportunities in Sharia-compliant financial products." },
-    { id: 3, name: "Islamic Banking", description: "Discuss the principles and benefits of Islamic banking." },
-    // Add more groups as needed
+export const groups = [
+{ id: 1, name: "Islamic Finance 101", description: "Discuss and learn about the basics of Islamic finance." },
+{ id: 2, name: "Sharia-Compliant Investments", description: "Explore investment opportunities in Sharia-compliant financial products." },
+{ id: 3, name: "Islamic Banking", description: "Discuss the principles and benefits of Islamic banking." },
+// Add more groups as needed
+];
+  
+
+
+// talentsData.js
+export const talents = [
+    {
+      id: 1,
+      name: 'Ahmad Zaki',
+      expertise: 'Shariah Compliance',
+      experience: '10 years',
+      bio: 'Experienced in developing and overseeing Shariah-compliant financial products.',
+      image: 'https://via.placeholder.com/150',
+      contact: 'ahmad@example.com',
+    },
+    {
+      id: 2,
+      name: 'Fatima Alifia',
+      expertise: 'Islamic Banking',
+      experience: '8 years',
+      bio: 'Specializes in Islamic banking operations and financial advising.',
+      image: 'https://via.placeholder.com/150',
+      contact: 'fatima@example.com',
+    },
+    {
+      id: 3,
+      name: 'Yusuf Harun',
+      expertise: 'Islamic Capital Markets',
+      experience: '12 years',
+      bio: 'Expert in Sukuk and Islamic equity markets, with numerous publications.',
+      image: 'https://via.placeholder.com/150',
+      contact: 'yusuf@example.com',
+    },
+    // Add more talents as needed
   ];
   

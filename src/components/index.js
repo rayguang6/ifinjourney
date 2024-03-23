@@ -7,6 +7,7 @@ import JobDetails from "./JobDetails";
 import JobSummary from "./JobSummary";
 import CommunityPost from './CommunityPost'
 import CommunityGroup from './CommunityGroup'
+import TalentCard from "./TalentCard";
 
 
 export {
@@ -19,6 +20,5 @@ export {
     JobDetails,
     CommunityPost,
     CommunityGroup,
-
-
+    TalentCard,
 }
