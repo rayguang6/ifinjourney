@@ -4,7 +4,7 @@ import React from 'react';
 const TraitProgress = ({ label, percentage }) => (
   <div className="mb-4">
     <label className="block mb-1 text-sm font-medium text-gray-700">{label}</label>
-    <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-700">
+    <div className="w-full bg-gray-200 rounded-full h-1.5">
       <div className="bg-blue-600 h-1.5 rounded-full" style={{ width: `${percentage}%` }}></div>
     </div>
   </div>
@@ -24,11 +24,11 @@ const PersonalityTestResults = ({ mbti, rayDalioPersonality }) => {
       <div>
         <h3 className="text-lg font-semibold">Ray Dalio Personality: {rayDalioPersonality.type}</h3>
         <img src={rayDalioPersonality.image} alt="Ray Dalio Type" className="w-24 h-24 rounded-full my-3" />
-        <div className="space-y-1">
+        <ul className="space-y-1">
           {rayDalioPersonality.strengths.map((strength, index) => (
-            <p key={index} className="text-sm">{strength}</p>
+            <li key={index} className="text-sm">{strength}</li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

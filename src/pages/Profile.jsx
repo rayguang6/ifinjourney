@@ -1,8 +1,8 @@
 
 // Profile.js
 import React from 'react';
-import { userProfile } from '../constants';
-import { CareerRoadmap, PersonalityTestResults } from '../components';
+import { userProfile } from '../constants'; // Adjust the import path as necessary
+import { PersonalityTestResults, CareerRoadmap } from '../components';
 
 const Profile = () => {
   return (
@@ -13,17 +13,14 @@ const Profile = () => {
         <p className="text-md text-gray-600">{userProfile.bio}</p>
       </div>
 
-      <div className="flex">
-        <PersonalityTestResults 
-          mbti={userProfile.mbti} 
-          rayDalioPersonality={userProfile.rayDalioPersonality} 
-        />
+      <PersonalityTestResults
+        mbti={userProfile.mbti}
+        rayDalioPersonality={userProfile.rayDalioPersonality}
+      />
 
-        <CareerRoadmap 
-          careerPathSuggestion={userProfile.careerPathSuggestion} 
-        />
-      </div>
-
+      <CareerRoadmap
+        careerPathSuggestion={userProfile.careerPathSuggestion}
+      />
     </div>
   );
 };
