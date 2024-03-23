@@ -6,9 +6,12 @@ import { Link, NavLink } from "react-router-dom";
 const Nav = () => {
     // Define a function that returns class names based on the isActive parameter
   const getNavLinkClass = ({ isActive }) => 
-  isActive ? 
-  "font-montserrat leading-normal text-lg text-slate-gray font-bold text-primary" : // Active classes
-  "font-montserrat leading-normal text-lg text-slate-gray"; // Default classes
+  // isActive ? 
+  // "font-montserrat leading-normal text-lg font-bold text-primary" : // Active classes
+  // "font-montserrat leading-normal text-lg text-slate-gray"; // Default classes
+  isActive
+  ? "relative font-montserrat text-lg font-bold text-primary after:absolute after:inset-x-0 after:-bottom-1 after:h-0.5 after:bg-primary after:scale-x-100 transition-transform duration-300"
+  : "relative font-montserrat text-lg text-slate-gray hover:scale-105 hover:text-primary transition-all duration-300";
 
 
   return (
@@ -37,7 +40,9 @@ const Nav = () => {
         </ul>
         
         <div className='flex gap-2 text-lg leading-normal font-medium font-montserrat max-lg:hidden wide:mr-24'>
-          <Link to='/'><div className="bg-primary px-5 py-2 rounded-md text-white font-bold	">Login</div></Link>
+        <Link to="/" className="bg-primary px-5 py-2 rounded-md text-white font-bold shadow-md hover:shadow-xl transition-shadow duration-300">
+          Login 
+          </Link>
         </div>
 
         <div className='hidden max-lg:block'>
