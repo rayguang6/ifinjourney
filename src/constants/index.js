@@ -396,4 +396,34 @@ export const talents = [
     },
     // Add more talents as needed
   ];
-  
+
+
+// SampleUserData.js
+export const userProfile = {
+  name: "Ray Guang",
+  bio: "An aspiring professional in Islamic Finance, passionate about merging finance with ethical principles.",
+  image: "https://media.licdn.com/dms/image/D5603AQFsKva_8YpHNw/profile-displayphoto-shrink_800_800/0/1690624857878?e=1716422400&v=beta&t=DZLk-JvN7lYCew1UinP7_InukyfCNTnW82L2hqqyxbI",
+  mbti: {
+    type: "INTJ",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd3NKlyXB0zwM-wyLgucoA23MIG0uOYR5pfCOqSouFpA&s",
+    traits: {
+      IE: 75, // Introversion (I) - Extroversion (E)
+      NS: 60, // Intuition (N) - Sensing (S)
+      TF: 40, // Thinking (T) - Feeling (F)
+      JP: 85  // Judging (J) - Perceiving (P)
+    }
+  },
+  rayDalioPersonality: {
+    type: "Shaper",
+    image: "https://scontent.fkul2-3.fna.fbcdn.net/v/t1.6435-9/199391613_1202133373541669_4509210245536829915_n.png?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=eRtZxzxbM2YAX-DPe5g&_nc_ht=scontent.fkul2-3.fna&oh=00_AfB-ttxvWIuz0MU0Q5k2H7kG4WzI2CJFol95d1iQHtGtKA&oe=66262862",
+    strengths: ["Visionary", "Determined", "Adaptable"]
+  },
+  careerPathSuggestion: {
+    description: "Based on your personality insights, a role in Strategy and Product Development within Islamic Finance could be highly rewarding. Here are key milestones to guide you:",
+    milestones: [
+      { id: 1, title: "Learn the Fundamentals of Islamic Finance", duration: "6 months", resources: ["Online Course", "Workshop"] },
+      { id: 2, title: "Specialize in Financial Product Development", duration: "1 year", resources: ["Certification", "Internship"] },
+      { id: 3, title: "Build Strategic Thinking and Leadership Skills", duration: "Continuous", resources: ["Books", "Mentorship"] }
+    ]
+  }
+};

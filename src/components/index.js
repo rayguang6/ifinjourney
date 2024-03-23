@@ -8,6 +8,8 @@ import JobSummary from "./JobSummary";
 import CommunityPost from './CommunityPost'
 import CommunityGroup from './CommunityGroup'
 import TalentCard from "./TalentCard";
+import CareerRoadmap from "./CareerRoadmap";
+import PersonalityTestResults from "./PersonalityTestResults";
 
 
 export {
@@ -21,4 +23,6 @@ export {
     CommunityPost,
     CommunityGroup,
     TalentCard,
+    CareerRoadmap,
+    PersonalityTestResults,
 }
