@@ -1,6 +1,31 @@
 import React from 'react';
 import { me } from '../assets/images';
 import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'; // Social media icons
+import { FaRegLightbulb, FaUsers, FaBrain } from 'react-icons/fa'; // Example icons
+import { FaChartLine, FaProjectDiagram, FaUserTie, FaCode, FaBalanceScale } from 'react-icons/fa'; // Icons for different paths
+
+const CareerPathRoadmap = ({ roadmap }) => (
+  <div className="mt-4">
+    {roadmap.map((step, index) => (
+      <div key={index} className="flex items-center text-sm my-2">
+        <FaCode className="mr-2" /> {/* This icon can change based on step type */}
+        <span>{step}</span>
+      </div>
+    ))}
+  </div>
+);
+
+const CareerSuggestionCard = ({ title, reason, Icon, roadmap }) => (
+  <div className="transition duration-300 ease-in-out transform hover:-translate-y-1 hover:shadow-xl cursor-pointer">
+    <div className="bg-white p-6 rounded-lg shadow-lg hover:bg-blue-50 border-l-4 border-primary">
+      <Icon size="3em" className="text-primary mb-4" />
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-gray-700 mb-4">{reason}</p>
+      <CareerPathRoadmap roadmap={roadmap} />
+      <a href="#" className="text-primary hover:underline mt-4 inline-block">Explore more →</a>
+    </div>
+  </div>
+);
 
 const Profile = () => {
   const personalDetails = {
@@ -24,9 +49,35 @@ const Profile = () => {
     description: "Shapers are independent thinkers, risk-takers, and focused on results. They fit well in roles that require vision and strong leadership, making them suitable for leadership positions in Islamic finance."
   };
 
+  // const suggestions = [
+  //   { title: 'Data Scientist in Islamic Finance', reason: 'Given your analytical skills and finance interest, data science within Islamic finance could be groundbreaking for you.' },
+  //   { title: 'Project Manager for Shariah-Compliant Products', reason: 'Your project management skills and understanding of Shariah compliance position you well to lead projects in developing new Shariah-compliant products.' },
+  // ];
   const suggestions = [
-    { title: 'Data Scientist in Islamic Finance', reason: 'Given your analytical skills and finance interest, data science within Islamic finance could be groundbreaking for you.' },
-    { title: 'Project Manager for Shariah-Compliant Products', reason: 'Your project management skills and understanding of Shariah compliance position you well to lead projects in developing new Shariah-compliant products.' },
+    { 
+      title: 'Data Scientist in Islamic Finance', 
+      reason: 'Leverage big data to drive Sharia-compliant financial solutions.', 
+      Icon: FaChartLine,
+      roadmap: ['Intro to Data Science', 'Python for Finance', 'Sharia Compliance in FinTech', 'Advanced Analytics', 'Capstone Project']
+    },
+    { 
+      title: 'Project Manager for Shariah-Compliant Products', 
+      reason: 'Lead projects that innovate in the Islamic financial market.', 
+      Icon: FaProjectDiagram,
+      roadmap: ['Basics of Project Management', 'Understanding Islamic Finance', 'Stakeholder Management', 'Risk Management', 'Product Launch']
+    },
+    { 
+      title: 'Sharia Compliance Officer', 
+      reason: 'Ensure financial products meet Sharia law and principles.', 
+      Icon: FaBalanceScale,
+      roadmap: ['Sharia Law in Finance', 'Ethical Finance Principles', 'Compliance Tools & Techniques', 'Auditing for Compliance', 'Advanced Sharia Studies']
+    },
+    { 
+      title: 'Islamic Financial Analyst', 
+      reason: 'Analyze market trends to advise on Sharia-compliant investments.', 
+      Icon: FaUserTie,
+      roadmap: ['Financial Market Fundamentals', 'Islamic Banking Products', 'Investment Analysis', 'Portfolio Management', 'Market Forecasting']
+    },
   ];
 
   // Render MBTI Progress Bar
@@ -93,17 +144,17 @@ const Profile = () => {
       </div>
 
       {/* Career Path Suggestions */}
+      <div className="container mx-auto p-4 space-y-8">
       <div className="bg-white shadow rounded-lg p-6">
         <h2 className="text-2xl font-semibold mb-4">AI-Generated Career Path Suggestions</h2>
-        {suggestions.map((suggestion, index) => (
-          <div key={index} className="mb-4">
-            <h3 className="text-xl font-semibold">{suggestion.title}</h3>
-            <p>{suggestion.reason}</p>
-            {/* This could be links to courses, success stories, etc. For the demo, it's just a placeholder link. */}
-            <a href="#" className="text-primary hover:underline">Explore more</a>
-          </div>
-        ))}
+        <div className="grid md:grid-cols-2 gap-6">
+          {suggestions.map((suggestion, index) => (
+            <CareerSuggestionCard key={index} {...suggestion} />
+          ))}
+        </div>
       </div>
+    </div>
+
     </div>
   );
 };
