@@ -7,6 +7,7 @@ import cimb from './cimb.png'
 import maybank from './maybank.png'
 import rhb from './rhb.png'
 import hsbc from './hsbc.png'
+import me from './me.png'
 
 
 export {
@@ -19,4 +20,5 @@ export {
     maybank,
     rhb,
     hsbc,
+    me
 }

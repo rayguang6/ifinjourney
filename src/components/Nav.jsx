@@ -2,11 +2,13 @@ import { hamburger } from "../assets/icons";
 import { navbarLogo } from "../assets/images";
 import { navLinks } from "../constants";
 import { Link, NavLink } from "react-router-dom";
+import { me } from "../assets/images";
 
 const Nav = () => {
   const user = {
     username: "Lei Zhi Guang",
-    profilePicture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEQQDWP7gyQjjw3pX3Qp3qhkj40-57LhFPzUw_ug32NumSzumCDhJjqthpNnRrEy8KAAA&usqp=CAU" // Placeholder image URL
+    profilePicture: me
+    // profilePicture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEQQDWP7gyQjjw3pX3Qp3qhkj40-57LhFPzUw_ug32NumSzumCDhJjqthpNnRrEy8KAAA&usqp=CAU" // Placeholder image URL
   };
 
     // Define a function that returns class names based on the isActive parameter
@@ -20,7 +22,7 @@ const Nav = () => {
 
 
   return (
-    <header className='padding-x py-8 w-full fixed shadow-green bg-white z-50'>
+    <header className='padding-x py-6 w-full fixed shadow-green bg-white z-50'>
       <nav className='flex justify-between items-center max-container'>
         <Link to='/'>
           <img
@@ -56,7 +58,7 @@ const Nav = () => {
             <img
               src={user.profilePicture}
               alt="profile"
-              className="w-10 h-10 rounded-full cursor-pointer"
+              className="w-10 h-10 rounded-full cursor-pointer object-cover"
             />
             <span className="text-lg text-gray-800 font-medium cursor-pointer">
               {user.username}

@@ -2,32 +2,13 @@
 import React from 'react';
 
 const ProgressBar = ({ progress }) => {
-  const containerStyles = {
-    height: 24,
-    width: '100%',
-    backgroundColor: "#DCE3DE",
-    borderRadius: 50,
-  };
-
-  const fillerStyles = {
-    height: '100%',
-    width: `${progress}%`,
-    backgroundColor: '#4ACD85',
-    borderRadius: 'inherit',
-    textAlign: 'right',
-    transition: 'width 1s ease-in-out',
-  };
-
-  const labelStyles = {
-    padding: 5,
-    color: 'white',
-    fontWeight: 'bold'
-  };
-
   return (
-    <div style={containerStyles}>
-      <div style={fillerStyles}>
-        <span style={labelStyles}>{`${progress}%`}</span>
+    <div className="h-4 bg-gray-300 rounded-full overflow-hidden relative">
+      <div
+        className="h-full bg-green-500 transition-all duration-1000 ease-in-out flex items-center justify-end"
+        style={{ width: `${progress}%` }}
+      >
+        <span className="text-white font-bold text-xs px-2 absolute top-0 left-0 bottom-0 flex items-center">{`${progress}%`}</span>
       </div>
     </div>
   );

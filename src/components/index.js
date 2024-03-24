@@ -10,6 +10,9 @@ import CommunityGroup from './CommunityGroup'
 import TalentCard from "./TalentCard";
 import CareerRoadmap from "./CareerRoadmap";
 import PersonalityTestResults from "./PersonalityTestResults";
+import DailyGoal from "./DailyGoal";
+import PersonalDetails from "./PersonalDetails";
+import Roadmap from "./Roadmap";
 
 
 export {
@@ -25,4 +28,7 @@ export {
     TalentCard,
     CareerRoadmap,
     PersonalityTestResults,
+    DailyGoal,
+    PersonalDetails,
+    Roadmap,
 }

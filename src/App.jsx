@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Nav />
-      <main className="container pt-32 px-16 max-container">
+      <main className="container pt-32 px-12 max-container bg-primary bg-opacity-5	">
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/community" element={<Community />} />

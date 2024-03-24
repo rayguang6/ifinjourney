@@ -399,9 +399,8 @@ export const talents = [
 
 
 // SampleUserData.js
-// SampleUserData.js
 export const userProfile = {
-    name: "Aisha Yusuf",
+    name: "Lei Zhi Guang",
     bio: "An aspiring professional in Islamic Finance, passionate about merging finance with ethical principles.",
     image: "https://via.placeholder.com/150",
     mbti: {
