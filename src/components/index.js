@@ -16,6 +16,8 @@ import Roadmap from "./Roadmap";
 import CommunityFriends from "./CommunityFriends";
 import CommunityNews from "./CommunityNews";
 import TalentCardsSwipe from "./TalentCardsSwipe";
+import StreakCalendar from "./StreakCalendar";
+
 
 
 
@@ -38,5 +40,6 @@ export {
     CommunityFriends,
     CommunityNews,
     TalentCardsSwipe,
-
+    StreakCalendar,
+    
 }

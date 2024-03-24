@@ -2,13 +2,19 @@
 import React from 'react';
 import { star } from '../assets/icons';
 import { me } from '../assets/images';
-import { ProgressBar , DailyGoal, PersonalDetails, Roadmap} from '../components';
+import { ProgressBar, PersonalDetails, Roadmap, StreakCalendar, DailyGoal} from '../components';
 
 const Dashboard = () => {
   return (
     <div className="grid grid-cols-12 gap-8 h-screen" style={{ gridTemplateRows: `calc(100vh - var(--navbar-height))` }}>
-      {/* Sidebar */}
+
+
+
       <div className="col-span-2 h-full">
+      {/* calendar */}
+      <StreakCalendar />
+      
+      {/* Sidebar */}
         <div className="flex px-4 py-3">
           <img src={star} alt="" />
           <h4 className='text-lg font-semibold ml-2'>Events</h4>
