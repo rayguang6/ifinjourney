@@ -2,11 +2,11 @@
 import React from 'react';
 import { star } from '../assets/icons';
 import { me } from '../assets/images';
-import { ProgressBar, PersonalDetails, Roadmap, StreakCalendar, DailyGoal} from '../components';
+import { ProgressBar, PersonalDetails, Roadmap, StreakCalendar, DailyGoal, IslamicFinanceQuiz, ChallengeMembers} from '../components';
 
 const Dashboard = () => {
   return (
-    <div className="grid grid-cols-12 gap-8 h-screen" style={{ gridTemplateRows: `calc(100vh - var(--navbar-height))` }}>
+    <div className="grid grid-cols-12 gap-8 h-full pb-10" style={{ gridTemplateRows: `calc(100vh - var(--navbar-height))` }}>
 
 
 
@@ -106,6 +106,17 @@ const Dashboard = () => {
 
           </div> */}
             <Roadmap/>
+        </div>
+
+        <div className="flex w-full gap-6 mt-8">
+          <div className="learning-progress bg-white shadow-sm w-full px-4 py-4 h-full rounded-2xl">
+              <h1 className='text-lg font-semibold mb-8'>Daily Quiz</h1>
+              <IslamicFinanceQuiz/>
+          </div>
+          <div className="learning-progress bg-white shadow-sm w-full px-4 py-4 h-full rounded-2xl">
+              <ChallengeMembers />
+          </div>
+          
         </div>
         
       </div>

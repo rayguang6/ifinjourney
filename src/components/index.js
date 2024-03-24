@@ -17,6 +17,8 @@ import CommunityFriends from "./CommunityFriends";
 import CommunityNews from "./CommunityNews";
 import TalentCardsSwipe from "./TalentCardsSwipe";
 import StreakCalendar from "./StreakCalendar";
+import IslamicFinanceQuiz from "./IslamicFinanceQuiz";
+import ChallengeMembers from "./ChallengeMembers";
 
 
 
@@ -41,5 +43,7 @@ export {
     CommunityNews,
     TalentCardsSwipe,
     StreakCalendar,
+    IslamicFinanceQuiz,
+    ChallengeMembers,
     
 }
