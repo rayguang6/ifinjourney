@@ -146,7 +146,7 @@ const Profile = () => {
       {/* Career Path Suggestions */}
       <div className="container mx-auto p-4 space-y-8">
       <div className="bg-white shadow rounded-lg p-6">
-        <h2 className="text-2xl font-semibold mb-4">AI-Generated Career Path Suggestions</h2>
+        <h2 className="text-2xl font-semibold mb-4">Your Career Path Suggestions</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {suggestions.map((suggestion, index) => (
             <CareerSuggestionCard key={index} {...suggestion} />

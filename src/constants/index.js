@@ -365,37 +365,63 @@ export const groups = [
   
 
 
-// talentsData.js
 export const talents = [
-    {
-      id: 1,
-      name: 'Ahmad Zaki',
-      expertise: 'Shariah Compliance',
-      experience: '10 years',
-      bio: 'Experienced in developing and overseeing Shariah-compliant financial products.',
-      image: 'https://via.placeholder.com/150',
-      contact: 'ahmad@example.com',
-    },
-    {
-      id: 2,
-      name: 'Fatima Alifia',
-      expertise: 'Islamic Banking',
-      experience: '8 years',
-      bio: 'Specializes in Islamic banking operations and financial advising.',
-      image: 'https://via.placeholder.com/150',
-      contact: 'fatima@example.com',
-    },
-    {
-      id: 3,
-      name: 'Yusuf Harun',
-      expertise: 'Islamic Capital Markets',
-      experience: '12 years',
-      bio: 'Expert in Sukuk and Islamic equity markets, with numerous publications.',
-      image: 'https://via.placeholder.com/150',
-      contact: 'yusuf@example.com',
-    },
-    // Add more talents as needed
-  ];
+  {
+    id: 1,
+    name: 'Ahmad Zaki',
+    expertise: 'Shariah Compliance',
+    experience: '10 years',
+    bio: 'Ahmad Zaki is a renowned Shariah compliance expert with over a decade of experience in crafting and supervising Shariah-compliant financial products. He has played a pivotal role in pioneering innovative Islamic financial solutions that align with modern financial needs while strictly adhering to Islamic principles.',
+    image: 'https://i.pravatar.cc/300?img=10',
+    contact: 'ahmad@example.com',
+  },
+  {
+    id: 2,
+    name: 'Fatima Alifia',
+    expertise: 'Islamic Banking',
+    experience: '8 years',
+    bio: 'Fatima Alifia brings a wealth of knowledge in Islamic banking operations and financial advising. Her expertise lies in tailoring banking services to the unique needs of Muslim clients, ensuring both competitive financial performance and strict compliance with Islamic law.',
+    image: 'https://i.pravatar.cc/300?img=2',
+    contact: 'fatima@example.com',
+  },
+  {
+    id: 3,
+    name: 'Yusuf Harun',
+    expertise: 'Islamic Capital Markets',
+    experience: '12 years',
+    bio: 'Yusuf Harun is an authoritative voice in Islamic capital markets, specializing in Sukuk and Islamic equity markets. His extensive research and publications have contributed to the development of Islamic finance globally, making significant impacts on both academic and practical levels.',
+    image: 'https://i.pravatar.cc/300?img=3',
+    contact: 'yusuf@example.com',
+  },
+  {
+    id: 4,
+    name: 'Laila Majid',
+    expertise: 'Risk Management',
+    experience: '5 years',
+    bio: 'Laila is skilled in identifying and mitigating financial risks, ensuring investments comply with Shariah principles.',
+    image: 'https://i.pravatar.cc/300?img=4',
+    contact: 'laila@example.com',
+  },
+  {
+    id: 5,
+    name: 'Khalid Saifullah',
+    expertise: 'Fintech Innovation',
+    experience: '7 years',
+    bio: 'Khalid is at the forefront of integrating technology with Islamic finance to create innovative financial solutions.',
+    image: 'https://i.pravatar.cc/300?img=5',
+    contact: 'khalid@example.com',
+  },
+  {
+    id: 6,
+    name: 'Sara Al-Hassan',
+    expertise: 'Sukuk Market Analysis',
+    experience: '9 years',
+    bio: 'Sara provides deep insights into Sukuk markets, helping investors make informed Shariah-compliant investments.',
+    image: 'https://i.pravatar.cc/300?img=6',
+    contact: 'sara@example.com',
+  },
+];
+
 
 
 // SampleUserData.js

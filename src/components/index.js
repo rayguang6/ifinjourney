@@ -15,6 +15,7 @@ import PersonalDetails from "./PersonalDetails";
 import Roadmap from "./Roadmap";
 import CommunityFriends from "./CommunityFriends";
 import CommunityNews from "./CommunityNews";
+import TalentCardsSwipe from "./TalentCardsSwipe";
 
 
 
@@ -36,5 +37,6 @@ export {
     Roadmap,
     CommunityFriends,
     CommunityNews,
+    TalentCardsSwipe,
 
 }
