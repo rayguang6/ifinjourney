@@ -13,6 +13,9 @@ import PersonalityTestResults from "./PersonalityTestResults";
 import DailyGoal from "./DailyGoal";
 import PersonalDetails from "./PersonalDetails";
 import Roadmap from "./Roadmap";
+import CommunityFriends from "./CommunityFriends";
+import CommunityNews from "./CommunityNews";
+
 
 
 export {
@@ -31,4 +34,6 @@ export {
     DailyGoal,
     PersonalDetails,
     Roadmap,
+    CommunityFriends,
+    CommunityNews,
 }

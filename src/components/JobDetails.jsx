@@ -5,9 +5,20 @@ import { Button } from '../components';
 const JobDetails = ({ job }) => {
   return (
     <div>
-      <h2 className="font-bold text-xl mb-2">{job.jobname} at {job.company}</h2>
-      <p><strong>Location:</strong> {job.location}</p>
-      <p><strong>Salary:</strong> ${job.salary}</p>
+
+      <div className="flex justify-between">
+
+        <div className="">
+          <h2 className="font-bold text-xl mb-2">{job.jobname} at {job.company}</h2>
+          <p><strong>Location:</strong> {job.location}</p>
+          <p><strong>Salary:</strong> ${job.salary}</p>
+        </div>
+        <div className="">
+          <Button label='Apply Now' backgroundColor='bg-gradient-to-r from-primary to-secondary' textColor='text-white font-semibold' />
+        </div>
+      </div>
+
+
       <p className="mt-4">{job.about}</p>
       <div className="mt-4">
         <h3 className="font-semibold">Role:</h3>
