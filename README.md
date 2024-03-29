@@ -1,4 +1,4 @@
-https://ifinjourney.space/talent
+https://ifinjourney.space/
 
 ![Screenshot 2024-03-29 at 1 42 42 PM](https://github.com/rayguang6/ifinjourney/assets/83267994/5b4ced19-3fba-465c-9682-86fa606fb243)
 ![Screenshot 2024-03-29 at 1 43 23 PM](https://github.com/rayguang6/ifinjourney/assets/83267994/e136e726-d1a2-4c0e-a57e-a63cc8ff5fbe)
